@@ -1,0 +1,17 @@
+{
+  "name": "duckduckgo-clone-website",
+  "version": "1.0.0",
+  "description": "DuckDuckGo clone website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "duckduckgo"
+  ],
+  "author": "Ionut Ivanciu",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
