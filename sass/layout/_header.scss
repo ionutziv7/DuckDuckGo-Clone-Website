@@ -1,6 +1,6 @@
 // ===== header =====
 .header {
-  background-color: $color-white-2;
+  background-color: #f5f5f5;
   color: $color-gray-header;
   position: relative;
 
@@ -28,11 +28,26 @@
       }
     }
 
+    // privacy spread text/link
+    &--spread {
+      position: absolute;
+      margin-top: 8rem;
+      left: 0%;
+      display: block;
+      width: 100%;
+      font-size: 1.8rem;
+
+      .heart {
+      
+      }
+    }
+
+    // popup card
     &__popup--card {
       display: none;
       position: absolute;
       top: 4rem;
-      right: 10rem;
+      right: 8rem;
       padding: 2.5rem;
       box-shadow: 0 2.5px 20px 0 rgba(0, 0, 0, 0.15);
       border-radius: 0.7rem;
@@ -47,9 +62,10 @@
     &__popup--item {
       display: flex;
       padding: 1rem;
+      border-radius: 0.5rem;
       z-index: 1;
       &:hover {
-        background-color: $color-white-2;
+        background-color: #e5e5e5;
       }
     }
 
@@ -63,11 +79,11 @@
       width: 5rem;
     }
   }
+  // end of header privacy simplified item
 
   // header popup social
   &__popup--social {
     cursor: pointer;
-    
 
     &--card--wrapper {
       display: none;
@@ -81,7 +97,7 @@
     &--card {
       position: absolute;
       top: 4rem;
-      right: 3rem;
+      right: 2rem;
       background-color: $color-white;
       padding: 1.7rem;
       box-shadow: $box-shadow;
@@ -111,7 +127,9 @@
       }
     }
   }
+  // end of header popup social
 
+  // horn wrapper
   &__horn__wrapper {
     display: flex;
     align-items: center;
@@ -130,6 +148,7 @@
       }
     }
   }
+  // end of horn wrapper
 
   // header hamburger menu
   &__popup--menu {
@@ -139,9 +158,141 @@
       font-size: 1.7rem;
     }
   }
+  // end of header hamburger menu
 
   .fa-chevron-down {
     font-size: 1.2rem;
+  }
+
+  // header logo
+  &__logo--wrapper {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    max-width: 110rem;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+  }
+  &__logo {
+    width: 20rem;
+
+    .logo-link {
+      position: relative;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        .learn-more {
+          visibility: visible;
+        }
+      }
+    }
+
+    .learn-more {
+      position: absolute;
+      top: -12rem;
+      right: -33%;
+      background-color: $color-gray-2;
+      color: $color-white;
+      padding: 0.3rem 0.5rem;
+      border-radius: 0.5rem;
+      visibility: hidden;
+      transition: all 0.4s ease;
+    }
+
+    &--img {
+      width: 100%;
+
+      &:hover {
+        .learn-more {
+          visibility: visible;
+        }
+      }
+    }
+  }
+  // end of header logo
+
+  // header input
+  &__input {
+    position: absolute;
+    text-align: center;
+    width: 60rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $color-gray-header;
+    font-size: 1.6rem;
+
+    &--form {
+      width: 100%;
+
+      top: 33%;
+      left: 30%;
+      transform: translate(-33%, -30%);
+      margin: 4rem auto;
+
+      display: flex;
+    }
+
+    &--text {
+      width: 100%;
+      height: 2.5rem;
+      padding: 2.2rem;
+      outline: none;
+      border: 0.1rem solid #ccc;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+      font-size: 1.8rem;
+      box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+
+      &:focus {
+        .fa-times {
+          color: $color-gray-2;
+          visibility: visible;
+          box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
+
+    .fa-times {
+      position: absolute;
+      right: 7rem;
+      align-self: center;
+      justify-self: center;
+      margin-top: 1rem;
+      font-size: 2rem;
+      opacity: 0.65;
+      cursor: pointer;
+      display: none;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .fa-times.show-times {
+      display: block;
+    }
+
+    .fa-search {
+      position: absolute;
+      right: 0rem;
+      font-size: 2.2rem;
+      align-self: center;
+      justify-self: center;
+      margin-top: 1rem;
+      padding: 1.15rem 1.7rem;
+      color: $color-gray-1;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(23, 23, 207, 0.895);
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        color: $color-white;
+      }
+    }
   }
 }
 // ===== end of header =====

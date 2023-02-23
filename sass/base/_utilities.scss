@@ -17,3 +17,15 @@
 .txt-underline {
   text-decoration: underline;
 }
+
+.blue {
+  background-color: blue;
+  color: #fff !important;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+
+  &:hover {
+    background-color: royalblue;
+    color: #fff;
+  }
+}
