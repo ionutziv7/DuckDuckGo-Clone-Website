@@ -49,6 +49,9 @@ section {
 .visibility-h {
   visibility: hidden; }
 
+.txt-underline {
+  text-decoration: underline; }
+
 .header {
   background-color: #f7f7f7;
   color: #aaa;
@@ -62,11 +65,15 @@ section {
     top: 1rem;
     right: 2rem; }
   .header__privacy--simplified {
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s; }
+    .header__privacy--simplified:hover {
+      color: #222; }
   .header__privacy__popup--card {
     display: none;
     position: absolute;
-    top: 3.5rem;
+    top: 4rem;
     right: 10rem;
     padding: 2.5rem;
     box-shadow: 0 2.5px 20px 0 rgba(0, 0, 0, 0.15);
@@ -76,7 +83,8 @@ section {
     display: block; }
   .header__privacy__popup--item {
     display: flex;
-    padding: 1rem; }
+    padding: 1rem;
+    z-index: 1; }
     .header__privacy__popup--item:hover {
       background-color: #f7f7f7; }
   .header__privacy__popup--link--img {
@@ -86,8 +94,32 @@ section {
   .header__privacy__popup--img {
     width: 5rem; }
   .header__popup--social {
-    cursor: pointer;
-    display: inline-block; }
+    cursor: pointer; }
+    .header__popup--social--card--wrapper {
+      display: none; }
+    .header__popup--social--card--wrapper.show-social-card {
+      display: block; }
+    .header__popup--social--card {
+      position: absolute;
+      top: 4rem;
+      right: 3rem;
+      background-color: #fff;
+      padding: 1.7rem;
+      box-shadow: 0 2.5px 20px 0 rgba(0, 0, 0, 0.15);
+      border-radius: 0.5rem;
+      display: flex;
+      flex-direction: column; }
+    .header__popup--social--item {
+      display: flex;
+      align-items: center; }
+      .header__popup--social--item a {
+        font-size: 1.4rem;
+        font-weight: 100; }
+      .header__popup--social--item .social-link:hover {
+        text-decoration: underline; }
+      .header__popup--social--item .social-logo {
+        margin-right: 1rem;
+        margin-top: 0.5rem; }
   .header__horn__wrapper {
     display: flex;
     align-items: center;
@@ -98,7 +130,10 @@ section {
     .header__horn__wrapper img {
       margin-right: 0.5rem;
       width: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      transition: all 0.4s ease-in-out; }
+      .header__horn__wrapper img:hover {
+        transform: scale(1.1); }
   .header__popup--menu {
     cursor: pointer;
     margin-left: 2rem; }

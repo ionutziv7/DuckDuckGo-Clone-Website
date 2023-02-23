@@ -20,12 +20,18 @@
   &__privacy {
     &--simplified {
       cursor: pointer;
+      z-index: 10;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color-black-2;
+      }
     }
 
     &__popup--card {
       display: none;
       position: absolute;
-      top: 3.5rem;
+      top: 4rem;
       right: 10rem;
       padding: 2.5rem;
       box-shadow: 0 2.5px 20px 0 rgba(0, 0, 0, 0.15);
@@ -33,6 +39,7 @@
       width: 45rem;
     }
 
+    // functionality with js on click
     &__popup--card.show-header-card {
       display: block;
     }
@@ -40,6 +47,7 @@
     &__popup--item {
       display: flex;
       padding: 1rem;
+      z-index: 1;
       &:hover {
         background-color: $color-white-2;
       }
@@ -56,10 +64,52 @@
     }
   }
 
-  // header popup social 
+  // header popup social
   &__popup--social {
     cursor: pointer;
-    display: inline-block;
+    
+
+    &--card--wrapper {
+      display: none;
+    }
+
+    // functionality with js on click
+    &--card--wrapper.show-social-card {
+      display: block;
+    }
+
+    &--card {
+      position: absolute;
+      top: 4rem;
+      right: 3rem;
+      background-color: $color-white;
+      padding: 1.7rem;
+      box-shadow: $box-shadow;
+      border-radius: 0.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--item {
+      display: flex;
+      align-items: center;
+
+      a {
+        font-size: 1.4rem;
+        font-weight: 100;
+      }
+
+      .social-link {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .social-logo {
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+      }
+    }
   }
 
   &__horn__wrapper {
@@ -73,6 +123,11 @@
       margin-right: 0.5rem;
       width: 100%;
       object-fit: cover;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
