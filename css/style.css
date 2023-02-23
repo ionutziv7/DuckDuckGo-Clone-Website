@@ -251,3 +251,31 @@ a:visited {
         border-top-right-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
         color: #fff; }
+  .header__img--teaser {
+    position: absolute;
+    bottom: 2rem;
+    width: 8rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .header__img--teaser .teaser-img {
+      width: 100%;
+      position: relative; }
+    .header__img--teaser .teaser--link {
+      position: relative; }
+    .header__img--teaser .arrow-con {
+      width: 3.2rem;
+      height: 3.2rem;
+      position: absolute;
+      bottom: -10%;
+      left: 30%;
+      border-radius: 50%;
+      background-color: #222;
+      text-align: center;
+      padding: 0.5rem; }
+      .header__img--teaser .arrow-con img {
+        width: 1.6rem;
+        height: 1.6rem; }

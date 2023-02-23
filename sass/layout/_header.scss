@@ -36,10 +36,6 @@
       display: block;
       width: 100%;
       font-size: 1.8rem;
-
-      .heart {
-      
-      }
     }
 
     // popup card
@@ -291,6 +287,45 @@
         border-top-right-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
         color: $color-white;
+      }
+    }
+  }
+
+  &__img--teaser {
+    position: absolute;
+    bottom: 2rem;
+
+    width: 8rem;
+    height: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .teaser-img {
+      width: 100%;
+      position: relative;
+    }
+
+    .teaser--link {
+      position: relative;
+    }
+
+    .arrow-con {
+      width: 3.2rem;
+      height: 3.2rem;
+      position: absolute;
+      bottom: -10%;
+      left: 30%;
+      border-radius: 50%;
+      background-color: $color-black-2;
+      text-align: center;
+      padding: 0.5rem;
+      img {
+        width: 1.6rem;
+        height: 1.6rem;
       }
     }
   }
