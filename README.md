@@ -7,7 +7,7 @@
 ### Main techonologies and tools used:
 
 - HTML, HTML5
-- CSS, CSS3,
+- CSS, CSS3
 - SASS, SCSS
 - JavaScript
 - npm
@@ -20,3 +20,5 @@
 - Git
 - Github
 - Netlify
+
+### Link: &rarr; https://duckduckgo-com-clone.netlify.app/
