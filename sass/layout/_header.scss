@@ -1,0 +1,92 @@
+// ===== header =====
+.header {
+  background-color: $color-white-2;
+  color: $color-gray-header;
+  position: relative;
+
+  // header top nav
+  &__top__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
+
+  // header privacy simplified item
+  &__privacy {
+    &--simplified {
+      cursor: pointer;
+    }
+
+    &__popup--card {
+      display: none;
+      position: absolute;
+      top: 3.5rem;
+      right: 10rem;
+      padding: 2.5rem;
+      box-shadow: 0 2.5px 20px 0 rgba(0, 0, 0, 0.15);
+      border-radius: 0.7rem;
+      width: 45rem;
+    }
+
+    &__popup--card.show-header-card {
+      display: block;
+    }
+
+    &__popup--item {
+      display: flex;
+      padding: 1rem;
+      &:hover {
+        background-color: $color-white-2;
+      }
+    }
+
+    &__popup--link--img {
+      display: flex;
+      flex-direction: column;
+      margin-right: 1rem;
+    }
+
+    &__popup--img {
+      width: 5rem;
+    }
+  }
+
+  // header popup social 
+  &__popup--social {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  &__horn__wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    img {
+      margin-right: 0.5rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // header hamburger menu
+  &__popup--menu {
+    cursor: pointer;
+    margin-left: 2rem;
+    i {
+      font-size: 1.7rem;
+    }
+  }
+
+  .fa-chevron-down {
+    font-size: 1.2rem;
+  }
+}
+// ===== end of header =====

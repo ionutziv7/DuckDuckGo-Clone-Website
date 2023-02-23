@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Segoe UI", "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6; }
+
+section {
+  width: 100%;
+  height: 100vh; }
+
+.header__privacy--paragraph {
+  font-size: 1.4rem; }
+  .header__privacy--paragraph i {
+    margin-left: 0.5rem; }
+
+.header__privacy__popup--h2 {
+  color: #222;
+  font-size: 1.7rem;
+  font-weight: 100; }
+  .header__privacy__popup--h2:hover {
+    text-decoration: underline; }
+
+.header__privacy--text {
+  color: #888;
+  font-size: 1.4rem; }
+
+.display-block {
+  display: block; }
+
+.display-none {
+  display: none; }
+
+.visibility-v {
+  visibility: visible; }
+
+.visibility-h {
+  visibility: hidden; }
+
+.header {
+  background-color: #f7f7f7;
+  color: #aaa;
+  position: relative; }
+  .header__top__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem; }
+  .header__privacy--simplified {
+    cursor: pointer; }
+  .header__privacy__popup--card {
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    right: 10rem;
+    padding: 2.5rem;
+    box-shadow: 0 2.5px 20px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 0.7rem;
+    width: 45rem; }
+  .header__privacy__popup--card.show-header-card {
+    display: block; }
+  .header__privacy__popup--item {
+    display: flex;
+    padding: 1rem; }
+    .header__privacy__popup--item:hover {
+      background-color: #f7f7f7; }
+  .header__privacy__popup--link--img {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem; }
+  .header__privacy__popup--img {
+    width: 5rem; }
+  .header__popup--social {
+    cursor: pointer;
+    display: inline-block; }
+  .header__horn__wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem; }
+    .header__horn__wrapper img {
+      margin-right: 0.5rem;
+      width: 100%;
+      object-fit: cover; }
+  .header__popup--menu {
+    cursor: pointer;
+    margin-left: 2rem; }
+    .header__popup--menu i {
+      font-size: 1.7rem; }
+  .header .fa-chevron-down {
+    font-size: 1.2rem; }
