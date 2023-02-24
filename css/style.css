@@ -279,3 +279,30 @@ a:visited {
       .header__img--teaser .arrow-con img {
         width: 1.6rem;
         height: 1.6rem; }
+
+.menu__open {
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  z-index: 20;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  border-left: 0.2rem solid #ccc; }
+
+.menu__item:not(:last-child) {
+  margin-bottom: 3rem; }
+
+.menu__header {
+  font-size: 1.08rem !important;
+  color: #000000 !important; }
+  .menu__header:not(:last-child) {
+    margin-bottom: 0.5rem; }
+
+.menu__link {
+  font-size: 1.44rem !important;
+  font-size: small;
+  color: #8c8888 !important; }
+  .menu__link:hover {
+    text-decoration: underline; }
+  .menu__link:link, .menu__link:visited {
+    color: #222; }
