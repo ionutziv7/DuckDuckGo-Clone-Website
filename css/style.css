@@ -289,6 +289,14 @@ a:visited {
   background-color: #fff;
   border-left: 0.2rem solid #ccc; }
 
+.menu .close__wrapper {
+  width: 3rem;
+  height: 3rem; }
+  .menu .close__wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
 .menu__item:not(:last-child) {
   margin-bottom: 3rem; }
 

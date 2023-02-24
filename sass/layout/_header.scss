@@ -343,6 +343,22 @@
     border-left: 0.2rem solid #ccc;
   }
 
+  // close wrapper
+  .close__wrapper {
+    width: 3rem;
+    height: 3rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // close icon
+  .close__icon {
+  
+  }
+
   &__item:not(:last-child) {
     margin-bottom: 3rem;
   }
