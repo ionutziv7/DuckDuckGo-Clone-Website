@@ -336,3 +336,31 @@ a:visited {
     text-decoration: underline; }
   .menu__link:link, .menu__link:visited {
     color: #222; }
+
+.section__about {
+  background: #58b792;
+  padding-top: 8rem;
+  position: relative; }
+  .section__about--text {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto; }
+  .section__about--heading {
+    color: #fff;
+    font-size: 3.95rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 2rem; }
+  .section__about--subheading {
+    color: #fff;
+    font-size: 2rem;
+    width: 65%;
+    margin: 0 auto; }
+  .section__about--img__wrapper {
+    width: 80rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+  .section__about--img {
+    width: 100%; }
