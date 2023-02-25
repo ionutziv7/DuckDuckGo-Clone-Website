@@ -23,3 +23,26 @@
   font-size: 1.4rem;
 }
 
+// section heading
+.heading__primary {
+  color: $color-white;
+  font-size: 3.95rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+// section subheading
+.subheading {
+  color: $color-white;
+  font-size: 2rem;
+  width: 65%;
+  margin: 0 auto;
+}
+
+// section text container
+.text__container {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}

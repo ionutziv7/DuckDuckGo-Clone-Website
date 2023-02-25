@@ -61,3 +61,12 @@ hamburger.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   menuOpen.classList.remove("show-menu-all");
 });
+
+const sectionAbout = document.querySelector('.section__about');
+sectionAbout.addEventListener('click', () => {
+  menuOpen.classList.remove("show-menu-all");
+})
+const sectionAds = document.querySelector('.section__ads');
+sectionAds.addEventListener('click', () => {
+  menuOpen.classList.remove("show-menu-all");
+})

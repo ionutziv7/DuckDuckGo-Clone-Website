@@ -1,42 +1,29 @@
-// ======= SECTION ABOUT =======
 .section {
+  // ======= SECTION ABOUT =======
   &__about {
     background: $color-green;
-    padding-top: 8rem;
     position: relative;
-
-    &--text {
-      text-align: center;
-      width: 40%;
-      margin: 0 auto;
-    }
-
-    &--heading {
-      color: $color-white;
-      font-size: 3.95rem;
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: 2rem;
-    }
-
-    &--subheading {
-      color: $color-white;
-      font-size: 2rem;
-      width: 65%;
-      margin: 0 auto;
-    }
-
-    &--img__wrapper {
-      width: 80rem;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    &--img {
-      width: 100%;
-    }
   }
+  // ======= END OF SECTION ABOUT =======
+
+  // ======= SECTION ADS =======
+  &__ads {
+    background: $color-orange;
+    position: relative;
+  }
+  // ======= END OF SECTION ADS =======
+
+  // ======= SECTION IMG STYLES =======
+  &__img__wrapper {
+    width: 80rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__img {
+    width: 100%;
+  }
+  // ======= END OF SECTION IMG STYLES =======
 }
-// ======= END OF SECTION ABOUT =======
