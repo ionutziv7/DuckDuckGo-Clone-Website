@@ -81,7 +81,7 @@ a:visited {
     margin: 2rem;
     position: absolute;
     top: 1rem;
-    right: 2rem; }
+    right: 0.7rem; }
   .header__privacy--simplified {
     cursor: pointer;
     z-index: 10;
@@ -297,9 +297,10 @@ a:visited {
   padding: 3rem 2rem;
   background-color: #fff;
   border-left: 0.17rem solid #ccc;
-  display: none; }
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out; }
   .menu__open.show-menu-all {
-    display: block; }
+    transform: translateX(0); }
 
 .menu--settings-X {
   display: flex;

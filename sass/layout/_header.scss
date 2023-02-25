@@ -13,7 +13,7 @@
 
     position: absolute;
     top: 1rem;
-    right: 2rem;
+    right: 0.7rem;
   }
 
   // header privacy simplified item
@@ -348,10 +348,13 @@
     padding: 3rem 2rem;
     background-color: $color-white;
     border-left: 0.17rem solid #ccc;
-    display: none;
+    // display: none;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
 
     &.show-menu-all {
-      display: block;
+      // display: block;
+      transform: translateX(0);
     }
   }
 
