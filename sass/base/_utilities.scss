@@ -18,6 +18,12 @@
   text-decoration: underline;
 }
 
+.txt-underline--hover {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .blue {
   background-color: blue;
   color: #fff !important;

@@ -17,8 +17,8 @@ const sec = document.querySelector(".sec");
 sec.addEventListener("click", () => {
   // headerPrivacyPopupCard.classList.remove("show-header-card");
   // headerPopupSocialCardWrapper.classList.remove("show-social-card");
-  // searchIcon.classList.remove("blue");
-  // faTimes.classList.remove("show-times");
+  searchIcon.classList.remove("blue");
+  faTimes.classList.remove("show-times");
   menuOpen.classList.remove("show-menu-all");
 });
 
