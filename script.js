@@ -15,10 +15,11 @@ headerPrivacySimplifed.addEventListener("click", () => {
 // on section click to remove cards
 const sec = document.querySelector(".sec");
 sec.addEventListener("click", () => {
-  headerPrivacyPopupCard.classList.remove("show-header-card");
-  headerPopupSocialCardWrapper.classList.remove("show-social-card");
-  searchIcon.classList.remove("blue");
-  faTimes.classList.remove("show-times");
+  // headerPrivacyPopupCard.classList.remove("show-header-card");
+  // headerPopupSocialCardWrapper.classList.remove("show-social-card");
+  // searchIcon.classList.remove("blue");
+  // faTimes.classList.remove("show-times");
+  menuOpen.classList.remove("show-menu-all");
 });
 
 const headerHornWrapper = document.querySelector(".header__horn__wrapper");
@@ -45,4 +46,18 @@ faTimes.addEventListener("click", () => {
 input.addEventListener("keyup", () => {
   searchIcon.classList.add("blue");
   faTimes.classList.add("show-times");
+});
+
+// menu on click to open
+const hamburger = document.querySelector(".header__popup--menu");
+const menuOpen = document.querySelector(".menu__open");
+const closeBtn = document.querySelector(".close__wrapper");
+hamburger.addEventListener("click", () => {
+  menuOpen.classList.add("show-menu-all");
+  headerPrivacyPopupCard.classList.remove("show-header-card");
+  headerPopupSocialCardWrapper.classList.remove("show-social-card");
+});
+
+closeBtn.addEventListener("click", () => {
+  menuOpen.classList.remove("show-menu-all");
 });
