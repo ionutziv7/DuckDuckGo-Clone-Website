@@ -32,12 +32,20 @@
   margin-bottom: 2rem;
 }
 
+.heading__blue__dark {
+  color: $color-blue-dark;
+}
+
 // section subheading
 .subheading {
   color: $color-white;
   font-size: 2rem;
   width: 65%;
   margin: 0 auto;
+}
+
+.subheading__blue__dark {
+  color: $color-blue-dark;
 }
 
 // section text container

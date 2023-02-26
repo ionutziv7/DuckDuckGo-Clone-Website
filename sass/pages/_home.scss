@@ -3,6 +3,7 @@
   &__about {
     background: $color-green;
     position: relative;
+    padding-bottom: -2rem;
   }
   // ======= END OF SECTION ABOUT =======
 
@@ -12,13 +13,21 @@
     position: relative;
   }
   // ======= END OF SECTION ADS =======
-  
+
   // ======= SECTION BATHTUB =======
   &__bathtub {
     background-color: $color-blue-light-1;
     position: relative;
   }
   // ======= END OF SECTION BATHTUB =======
+
+  // ======= SECTION FAN =======
+  &__fan {
+    background-color: $color-blue-light-2;
+    color: $color-blue-dark !important;
+    position: relative;
+  }
+  // ======= END OF SECTION FAN =======
 
   // ======= SECTION IMG STYLES =======
   &__img__wrapper {
@@ -34,3 +43,42 @@
   }
   // ======= END OF SECTION IMG STYLES =======
 }
+
+// ======= BOTTOM ARROW =======
+.bottom__arrow {
+  &__container {
+    position: fixed;
+    z-index: 30;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__wrapper {
+    width: 5.5rem;
+    height: 5.5rem;
+    position: relative;
+    bottom: 0%;
+    transform: translate(0, 0);
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+    transform-origin: center;
+    &:hover {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+}
+// ======= END OF BOTTOM ARROW =======

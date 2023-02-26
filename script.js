@@ -62,11 +62,49 @@ closeBtn.addEventListener("click", () => {
   menuOpen.classList.remove("show-menu-all");
 });
 
-const sectionAbout = document.querySelector('.section__about');
-sectionAbout.addEventListener('click', () => {
+const sectionAbout = document.querySelector(".section__about");
+sectionAbout.addEventListener("click", () => {
   menuOpen.classList.remove("show-menu-all");
-})
-const sectionAds = document.querySelector('.section__ads');
-sectionAds.addEventListener('click', () => {
+});
+const sectionAds = document.querySelector(".section__ads");
+sectionAds.addEventListener("click", () => {
   menuOpen.classList.remove("show-menu-all");
-})
+});
+
+// header__img--teaser on click show arrow bottom
+const headerImgTeaser = document.querySelector(".header__img--teaser");
+headerImgTeaser.addEventListener("click", () => {
+  bottomArrow.classList.add("visibility-v");
+});
+
+const bottomArrow = document.querySelector(".bottom__arrow__container");
+
+// set attribute depending on the sections
+window.onscroll = function () {
+  setAttributeHref();
+};
+
+// setAttribute href function
+function setAttributeHref() {
+  if (document.documentElement.scrollTop > 700) {
+    bottomArrow.classList.add("opacity-1");
+    bottomArrow.setAttribute("href", "#ads");
+  }
+
+  if (document.documentElement.scrollTop > 1400) {
+    bottomArrow.classList.add("opacity-1");
+    bottomArrow.setAttribute("href", "#bathtub");
+  }
+
+  if (document.documentElement.scrollTop > 2200) {
+    bottomArrow.setAttribute("href", "#fan");
+    bottomArrow.classList.add("opacity-1");
+  }
+  // if (document.documentElement.scrollTop > 3000) {
+  //   bottomArrow.classList.add("opacity-0");
+  //   bottomArrow.classList.add("visibility-h");
+  // }
+
+  // console.log(window.pageYOffset)
+  // console.log(document.documentElement.scrollTop);
+}
