@@ -555,6 +555,10 @@ a:visited {
   background: #f5a339;
   position: relative; }
 
+.section__bathtub {
+  background-color: #5f63bd;
+  position: relative; }
+
 .section__img__wrapper {
   width: 80rem;
   position: absolute;
