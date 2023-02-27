@@ -106,11 +106,14 @@ function setAttributeHref() {
     bottomArrow.setAttribute("href", "#fan");
     bottomArrow.classList.add("opacity-1");
   }
-  if (document.documentElement.scrollTop > 3020) {
+  if (document.documentElement.scrollTop > 3000) {
+    bottomArrow.classList.toggle("opacity-0");
+    bottomArrow.classList.toggle("visibility-h");
+  } else if (document.documentElement.scrollTop > 2955) {
     bottomArrow.classList.toggle("opacity-0");
     bottomArrow.classList.toggle("visibility-h");
   }
 
-  // console.log(window.pageYOffset);
-  // console.log(document.documentElement.scrollTop);
+  console.log(window.pageYOffset);
+  console.log(document.documentElement.scrollTop);
 }

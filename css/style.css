@@ -676,7 +676,11 @@ a:visited {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.3);
   transition: 0.2s;
-  transform-origin: center; }
+  transform-origin: center;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  -moz-transform: translateZ(0) scale(1, 1); }
   .bottom__arrow__wrapper:hover {
     width: 7rem;
     height: 7rem; }
