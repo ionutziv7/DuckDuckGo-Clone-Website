@@ -75,6 +75,7 @@ sectionAds.addEventListener("click", () => {
 const headerImgTeaser = document.querySelector(".header__img--teaser");
 headerImgTeaser.addEventListener("click", () => {
   bottomArrow.classList.add("visibility-v");
+  bottomArrow.classList.add("opacity-1");
 });
 
 const bottomArrow = document.querySelector(".bottom__arrow__container");
@@ -86,8 +87,13 @@ window.onscroll = function () {
 
 // setAttribute href function
 function setAttributeHref() {
-  if (document.documentElement.scrollTop > 700) {
+  if (document.documentElement.scrollTop === 0) {
+    bottomArrow.classList.toggle("opacity-0");
+    bottomArrow.classList.toggle("visibility-h");
+  }
+  if (document.documentElement.scrollTop > 500) {
     bottomArrow.classList.add("opacity-1");
+    bottomArrow.classList.add("visibility-v");
     bottomArrow.setAttribute("href", "#ads");
   }
 
@@ -100,11 +106,11 @@ function setAttributeHref() {
     bottomArrow.setAttribute("href", "#fan");
     bottomArrow.classList.add("opacity-1");
   }
-  // if (document.documentElement.scrollTop > 3000) {
-  //   bottomArrow.classList.add("opacity-0");
-  //   bottomArrow.classList.add("visibility-h");
-  // }
+  if (document.documentElement.scrollTop > 3020) {
+    bottomArrow.classList.toggle("opacity-0");
+    bottomArrow.classList.toggle("visibility-h");
+  }
 
-  // console.log(window.pageYOffset)
+  // console.log(window.pageYOffset);
   // console.log(document.documentElement.scrollTop);
 }
